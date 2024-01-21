@@ -23,15 +23,6 @@ Welcome to the CleanArchitecture repository, an ASP.NET Core project showcasing 
    - No infrastructure-specific code.
    - No application or presentation concerns.
 
-   *No dependency*
-   Contains:
-   - Entities
-   - Core business rules
-   - Factory interfaces
-   - Enumerations
-   - Value objects
-   - Custom exceptions
-
 2. **Application**
 
    **Responsibilities:**
@@ -50,11 +41,6 @@ Welcome to the CleanArchitecture repository, an ASP.NET Core project showcasing 
    - No direct dependencies on infrastructure or presentation layers.
    - No detailed implementation of external libraries or frameworks.
 
-   *Dependency:* Domain
-   Implements:
-   - Use cases
-   - Services/Mediator
-
 3. **Infrastructure**
 
    **Responsibilities:**
@@ -70,8 +56,6 @@ Welcome to the CleanArchitecture repository, an ASP.NET Core project showcasing 
    - No direct dependencies on higher-level layers (e.g., Domain or Application).
    - No business rules or specific use case implementations.
 
-   *No external libraries implemented*
-
 4. **Presentation**
 
    **Responsibilities:**
@@ -86,8 +70,6 @@ Welcome to the CleanArchitecture repository, an ASP.NET Core project showcasing 
    **What It Should Not Have:**
    - No business logic.
    - No direct dependencies on lower-level layers (e.g., Application or Infrastructure).
-
-   *(No specific details provided)*
 
 5. **WebApi**
 
@@ -105,10 +87,6 @@ Welcome to the CleanArchitecture repository, an ASP.NET Core project showcasing 
    **What It Should Not Have:**
    - No detailed business logic.
    - No direct dependencies on lower-level layers (e.g., Domain).
-
-   *Dependencies:* Application, Infrastructure, and Presentation
-   Implements:
-   - Integration of Serilog libraries
 
 ### Implementation Details
 
